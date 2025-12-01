@@ -1,69 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Dwarkadish Divine Academy</title>
+  <meta charset="utf-8">
+  <title>Simple Admission Form</title>
 </head>
 <body>
+  <!-- Bahut hi simple student admission form - beginner ke liye -->
+  <h1>Admission Form</h1>
 
-<!-- HEADER -->
-<table width="100%" cellpadding="20" bgcolor="#f2f2f2">
-    <tr>
-        <td align="center">
-            <h1>Dwarkadish Divine Academy</h1>
-            <h3>Contact Us</h3>
-        </td>
-    </tr>
-</table>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <!-- Naam -->
+    <label>First Name: <input type="text" name="firstName" required></label>
+    <br><br>
 
-<!-- NAVIGATION -->
-<table width="100%" cellpadding="10" bgcolor="#ddd">
-    <tr align="center">
-        <td><a href="DWARKADISH.html">Home</a></td>
-        <td><a href="about.html">About Us</a></td>
-        <td><a href="create.html">Contact</a></td>
-    </tr>
-</table>
+    <label>Last Name: <input type="text" name="lastName" required></label>
+    <br><br>
 
-<br><br>
+    <!-- Janm tithi -->
+    <label>Date of Birth: <input type="date" name="dob" required></label>
+    <br><br>
 
-<!-- CONTACT FORM -->
-<table width="50%" cellpadding="10" align="center" border="1">
-    <tr>
-        <td>
+    <!-- Gender -->
+    <span>Gender:</span>
+    <label><input type="radio" name="gender" value="Female" required> Female</label>
+    <label><input type="radio" name="gender" value="Male"> Male</label>
+    <label><input type="radio" name="gender" value="Other"> Other</label>
+    <br><br>
 
-            <form action="action.php">
+    <!-- Pata -->
+    <label>Address:</label><br>
+    <textarea name="address" rows="3" cols="30"></textarea>
+    <br><br>
 
-                <h3>Name</h3>
-                <input type="text" name="name" placeholder="Enter your name" size="40">
+    <!-- Contact -->
+    <label>Email: <input type="email" name="email"></label>
+    <br><br>
 
-                <h3>Email ID</h3>
-                <input type="email" name="email" placeholder="Enter your email" size="40">
+    <label>Phone: <input type="tel" name="phone" placeholder="9876543210"></label>
+    <br><br>
 
-                <h3>Mobile Number</h3>
-                <input type="text" name="mobile" placeholder="Enter mobile number" size="40">
+    <!-- Course -->
+    <label>Course:
+      <select name="course">
+        <option value="">--Select--</option>
+        <option value="BSc">B.Sc</option>
+        <option value="BA">B.A</option>
+        <option value="BCom">B.Com</option>
+      </select>
+    </label>
+    <br><br>
 
-                <h3>Password</h3>
-                <input type="password" name="password" placeholder="Enter password" size="40">
+    <!-- Photo (optional) -->
+    <label>Photo: <input type="file" name="photo" accept="image/*"></label>
+    <br><br>
 
-                <br><br>
-                <button type="button" onclick="alert('Saved Successfully')">Save</button>
-
-            </form>
-
-        </td>
-    </tr>
-</table>
-
-<br><br>
-
-<!-- FOOTER -->
-<table width="100%" cellpadding="20" bgcolor="#f2f2f2">
-    <tr>
-        <td align="center">© 2025 Dwarkadish Divine Academy — All Rights Reserved</td>
-    </tr>
-</table>
-
+    <!-- Submit -->
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>
+
